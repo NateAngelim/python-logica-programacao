@@ -1,0 +1,8 @@
+login = "email@valido.com.br"
+senha_valida = "123456"
+email = input('Digite o seu endereço de e-mail: ')
+senha = input('Digite a sua senha: ')
+if email == login and senha == senha_valida:
+  print( 'Entrada autorizada, bom acesso.')
+else: 
+  print('Entrada não autorizada, dados estão incorretos. Cheque novamente ou entre em contato com um admistrador. ')  
