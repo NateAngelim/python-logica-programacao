@@ -1,0 +1,9 @@
+num1 = int(input('Digite o número do primeiro lado do triângulo.'))
+num2 = int(input('Digite o número do segundo lado do triângulo.'))
+num3 = int(input('Digite o número do terceiro lado do triângulo.'))
+if num1 == num2 and num2 == num3:
+  print('O triângulo possui os três lados iguais, sendo equilátero.')
+elif num1 != num2 and num2!= num3 and num1 != num3 :
+  print('O triângulo possui os três lados diferentes, sendo escaleno.')
+else:
+  print('O triângulo possui dois lados iguais, sendo isósceles.')
