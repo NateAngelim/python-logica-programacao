@@ -1,0 +1,23 @@
+print('Cálculo de equação do segundo grau.')
+a = int(input('Diga um número inteiro: '))
+b = int(input('Diga um número inteiro: '))
+c = int(input('Diga um número inteiro: '))
+delta = b**2 - 4*a*c
+
+print(f'O valor de delta é: {delta}')
+if delta > 0:
+    primeira_raiz = (-(b) + delta ** 0.5) / (2 * a)
+    segunda_raiz = (-(b) - delta ** 0.5) / (2 * a)
+
+    print('A equação tem duas raízes reais e distintas.')
+    print(f'A primeira raiz é: {primeira_raiz}')
+    print(f'A segunda raiz é: {segunda_raiz}')
+
+elif delta == 0:
+    raiz = (-(b)) / (2 * a)
+
+    print('A equação tem uma única raiz real.')
+    print(f'A raiz é: {raiz}')
+
+else:
+    print('A equação não possui raízes reais.')
