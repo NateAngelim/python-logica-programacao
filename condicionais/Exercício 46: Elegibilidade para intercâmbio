@@ -1,0 +1,9 @@
+print('Elegibilidade para intercâmbio')
+idade = int(input('Digite a sua idade: '))
+nivel = input('Informe o seu nível de proeficiência na lingua: ').upper()
+if idade < 0 or  (nivel != "A1") and (nivel != "A2") and (nivel != "B1") and (nivel != "B2") and (nivel != "C1") and (nivel != "C2"):
+  print('Erro, informe um nível valido.')
+elif idade >=18 and (nivel == "B2" or nivel == "C1"):
+  print('Candidato apto a vaga de intercâmbio.')  
+else:
+  print('Candidato não esta apto a vaga de intercâmbio.')   
