@@ -3,18 +3,29 @@ Exercícios de lógica de programação e Python realizados durante meus estudos
 
 # Python - Lógica de Programação
 
-Repositório criado para registrar minha evolução nos estudos de Python.
+Repositório criado para registrar minha evolução nos estudos de Python e lógica de programação.
 
 ## Conteúdo
 
-* Estruturas condicionais (if, elif e else)
-* Exercícios de lógica
-* Validação de dados
-* Pequenos desafios de programação
+### Estruturas Condicionais
+
+* if
+* elif
+* else
+* operadores lógicos
+* condicionais aninhadas
+
+## Exercícios
+
+* cálculo de descontos
+* planos de internet
+* validação de datas
+* identificação de signos
+* outros desafios de lógica
 
 ## Objetivo
 
-Praticar programação diariamente e construir uma base sólida para áreas como análise de dados, automação e desenvolvimento de software.
+Desenvolver raciocínio lógico e fundamentos de programação utilizando Python.
 
 ## Tecnologias
 
@@ -24,4 +35,4 @@ Praticar programação diariamente e construir uma base sólida para áreas como
 
 ## Status
 
-Em andamento.
+Em desenvolvimento.
