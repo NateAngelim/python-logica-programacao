@@ -1,0 +1,63 @@
+print('Descubra qual é o seu signo.')
+dia = int(input("Digite o dia do seu nascimento: "))
+mes = input("Digite o mês: ").lower()
+
+if mes == 'março' and dia >= 21:
+  print('O signo é aries.')
+elif mes == "abril" and dia <= 19:
+  print('O signo é aries.')  
+
+if mes == 'abril' and dia >= 20:
+  print('O signo é touro.')
+elif mes == "maio" and dia <= 20:
+  print('O signo é touro.')  
+
+if mes == 'maio' and dia >= 21:
+  print('O signo é gêmeos.')
+elif mes == "junho" and dia <= 20:
+  print('O signo é gêmeos.')  
+
+if mes == 'junho' and dia >= 21:
+  print('O signo é câncer.')
+elif mes == "julho" and dia <= 22:
+  print('O signo é câncer.')  
+
+if mes == 'julho' and dia >= 23:
+  print('O signo é leão.')
+elif mes == "agosto" and dia <= 22:
+  print('O signo é leão.')  
+
+if mes == 'agosto' and dia >= 23:
+  print('O signo é virgem.')
+elif mes == "setembro" and dia <= 22:
+  print('O signo é virgem.')  
+
+if mes == 'setembro' and dia >= 23:
+  print('O signo é libra.')
+elif mes == "outubro" and dia <= 22:
+  print('O signo é libra.')  
+
+if mes == 'outubro' and dia >= 23:
+  print('O signo é escorpião.')
+elif mes == "novembro" and dia <= 21:
+  print('O signo é escorpião.')  
+
+if mes == 'novembro' and dia >= 22:
+  print('O signo é sagitário.')
+elif mes == "dezembro" and dia <= 21:
+  print('O signo é sagitário.')  
+
+if mes == 'dezembro' and dia >= 22:
+  print('O signo é capricórnio.')
+elif mes == "janeiro" and dia <= 19:
+  print('O signo é capricórnio.')  
+
+if mes == 'janeiro' and dia >= 20:
+  print('O signo é aquário.')
+elif mes == "fevereiro" and dia <= 18:
+  print('O signo é aquário.')    
+
+if mes == 'fevereiro' and dia >= 19:
+  print('O signo é peixes.')
+elif mes == "março" and dia <= 20:
+  print('O signo é peixes.')  
