@@ -1,0 +1,9 @@
+planos = input('Escolha seu plano de internet, digite B para o básico, I para o intermediário, e P para o premium: ').upper()
+if planos == "B":
+  print("Você escolheu o plano básico, por R$ 39.99 por mês você tem acesso a 300gb de internet banda larga.")
+elif planos == "I":  
+  print("Você escolheu o plano intermediário, por R$ 59.99 por mês você tem acesso a 600gb de internet banda larga.")
+elif planos == "P":
+   print("Você escolheu o premium, por R$ 75 por mês você tem acesso a 1tb de internet banda larga.") 
+else:
+  print('Você escolheu uma opção inválida, volte ao menu inicial e tente novamente.')   
