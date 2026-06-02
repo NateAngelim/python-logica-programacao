@@ -1,0 +1,15 @@
+print('Análise de crédito.')
+salario = float(input('Digite o seu salário.'))
+emprestimo = float(input('Digite o valor pedido no empréstimo.'))
+tempo = int(input('Digite em quantos meses pretende pagar, lembrando que o limite máximo é de 60 meses.'))
+
+if salario > 3000:
+  limite = salario * 0.3
+  valor_parcela = (emprestimo / tempo)
+  if valor_parcela < limite:
+    print(f'Parabéns informamos que o seu empréstimo foi aprovado. O valor da sua parcela será de R$ {valor_parcela} durante {tempo} meses.')
+  else:
+     print('Lamentamos informar que o empréstimo não foi aprovado.') 
+
+else:
+  print('Lamentamos informar que o empréstimo não foi aprovado.')  
