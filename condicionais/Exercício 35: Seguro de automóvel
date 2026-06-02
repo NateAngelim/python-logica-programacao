@@ -1,0 +1,25 @@
+print('Seguro de automóvel.')
+idade = int(input('Digite a sua idade: '))
+if idade < 0:
+  print('Valor inválido.')
+
+if idade <= 24:
+  print("Faixa de Alto Risco.")
+elif idade <= 30:
+  print('Risco moderado.') 
+elif idade <= 59:
+  print('Baixo Risco') 
+else:
+  print("Melhor idade, menos riscos de acidente.")    
+
+
+tempo = int(input('Diga há quanto tempo você tem carteira de motorista: '))
+if tempo < 0: 
+   print("Valor inválido.")
+
+if tempo <= 2:
+  print("Recém-habilitado - Risco altíssimo.")
+elif tempo <= 5:
+  print("Risco moderado")  
+else:
+  print('Risco baixo.')  
