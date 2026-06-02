@@ -1,0 +1,12 @@
+print('Tipo sanguíneo compatível')
+sangue = input("Informe sue tipo sanguineo: ").upper()
+if sangue != "A" and sangue != "B" and sangue != "AB" and sangue != "O":
+  print("Erro, informe um tipo sanguineo valido.") 
+elif sangue == 'A':
+  print("Pode receber doações dos tipo A e O.")
+elif sangue == "B":
+  print("Pode receber doações dos tipo B e O.") 
+elif sangue == "O":
+  print("Pode receber doação apenas do tipo O.") 
+else:
+  print("Pode receber doações de todos os tipos sanguineos.")
