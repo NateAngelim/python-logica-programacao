@@ -1,0 +1,12 @@
+print('Classificação de crédito')
+score = int(input('Informe o seu score de crédito.'))
+if score < 0 or score > 1000:
+  print('Erro, valor inválido.')
+elif score <= 400:
+  print('Seu score de crédito é ruim.')
+elif score <= 600:
+  print('Seu score de crédito é regular.')    
+elif score <= 800:
+  print('Seu score de crédito é bom.')  
+else:
+  print('Seu score de crédito é excelente.')
