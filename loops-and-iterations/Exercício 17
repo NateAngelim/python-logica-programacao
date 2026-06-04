@@ -1,0 +1,18 @@
+codigo = 29
+tentativas = 0
+
+jogo = int(input('Tente adivinhar o número sorteado: '))
+
+while jogo != codigo:
+    tentativas += 1
+
+    if jogo < codigo:
+        print('O número correto é maior.')
+    else:
+        print('O número correto é menor.')
+
+    jogo = int(input('Tente novamente: '))
+
+tentativas += 1
+
+print(f'Parabéns! Você acertou em {tentativas} tentativa(s).')
