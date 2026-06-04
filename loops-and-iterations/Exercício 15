@@ -1,0 +1,8 @@
+candidato = int(input('Digite um numero: '))
+
+for numero in range (1, candidato+1):
+  if candidato % numero  == 0:
+    print(f'Este numero é divisivel, {numero}') 
+
+  else: 
+    print(f'Este número não é divisivel, {numero}')  
