@@ -1,0 +1,6 @@
+senha = "123456"
+i = input('Por favor digite a sua senha: ')
+while i != senha:
+  print('Senha incorreta, por favor insira a senha correta.')
+  i = input('Por favor digite novamente a sua senha: ')
+print('Senha correta, pode entrar.')  
