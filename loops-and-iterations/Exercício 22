@@ -1,0 +1,23 @@
+print('Digite nome e nota dos alunos da turma. Para encerrar digite 0.')
+contador = 0
+soma_notas = 0
+while True:
+  
+  nome = input("Digite o nome do aluno: ").upper()
+  
+  if nome == "0":
+    break
+
+  nota = int(input('Digite a nota do aluno(a): '))
+
+
+
+  ficha = (f'O aluno(a) {nome} teve a nota {nota}')
+  print(ficha)
+
+  contador +=1
+  soma_notas += nota
+
+media = soma_notas / contador
+
+print(f'A media da turma foi: {media}')
