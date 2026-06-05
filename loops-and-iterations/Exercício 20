@@ -1,0 +1,16 @@
+senha_valida = "123456"
+tentativas = 3
+
+while tentativas > 0:
+    senha = input("Digite sua senha: ")
+
+    if senha == senha_valida:
+        print("Senha correta, pode entrar no sistema.")
+        break
+
+    tentativas -= 1
+
+    if tentativas > 0:
+        print(f"Senha incorreta. Você ainda tem {tentativas} tentativa(s).")
+    else:
+        print("Sistema bloqueado. Número máximo de tentativas atingido.")
