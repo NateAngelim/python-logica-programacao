@@ -1,0 +1,22 @@
+mais_caro = 0
+produto_caro = "0" 
+total = 0
+media = 0
+contador = 0
+while True:
+  produto = input('Cadastre o produto:').lower()
+  if produto == '0':
+    break 
+
+  preco = float(input('Cadastre o preço: '))
+  print(f'O {produto} custa {preco} reais.')
+  total +=preco
+  contador +=1
+  media = total / contador
+  
+  if preco > mais_caro:
+    mais_caro = preco
+    produto_caro = produto
+print(f'O preço total dos produtos foi de R$ {total} reais.') 
+print(f'O produto mais caro foi: {produto_caro} que custou R$ {mais_caro} reais.')  
+print(f'O preço medio dos itens foi de R$ {media: .2f} reais.')
