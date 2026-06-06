@@ -1,0 +1,29 @@
+#1 <- para depósito
+#2 <- para saque
+#3 <- para saldo
+#0 <- para sair
+
+saldo = 1000
+
+while True:
+
+    opcao = int(input("Opção: "))
+
+    if opcao == 0:
+        break
+
+    elif opcao == 1:
+
+        deposito = int(input("Quanto deseja depositar? "))
+
+        saldo += deposito
+
+    elif opcao == 2:
+
+        saque = int(input("Quanto deseja sacar? "))
+
+        if saque > saldo:
+            print("Saldo insuficiente.")
+
+        else:
+            saldo -= saque
