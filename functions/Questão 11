@@ -1,0 +1,9 @@
+def soma_lista(numeros):
+    soma = 0
+
+    for numero in numeros:
+        soma += numero
+
+    return soma
+
+print(soma_lista([5, 4, 3, 2, 1]))
