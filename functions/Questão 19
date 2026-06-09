@@ -1,0 +1,10 @@
+def media(numero): 
+  contador = 0
+  notas = 0
+  for num in (numero):
+    notas += num
+    contador +=1
+
+  return notas / contador
+
+print(media([9,5,6,10,7]))   
