@@ -1,0 +1,7 @@
+def palindromo(palavra):
+  palavra = palavra.lower()
+  contrario = palavra[::-1]
+  if palavra == contrario:
+    return "É palíndromo"
+  return "Não é palíndromo" 
+print(palindromo('Radar'))
