@@ -1,0 +1,12 @@
+def segundo(numeros):
+  segundo_maior = 0
+  maior = 0
+  for num in numeros:
+    if num > maior:
+      segundo_maior = maior
+      maior = num
+    elif maior > segundo_maior:
+      segundo_maior = num
+  return segundo_maior
+
+print(segundo([2,5,8,1,9]))
