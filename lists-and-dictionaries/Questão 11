@@ -1,0 +1,12 @@
+a = int(input('Digite um número: '))
+b = int(input('Digite um número: '))
+c = int(input('Digite um número: '))
+d = int(input('Digite um número: '))
+e = int(input('Digite um número: '))
+
+numeros = [a,b,c,d,e]
+
+for num in numeros: 
+  if num % 2 == 0:
+
+    print(f'São números pares {num}')
