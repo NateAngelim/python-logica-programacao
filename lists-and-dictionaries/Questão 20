@@ -1,0 +1,10 @@
+a = input('Digite um nome: ')
+b = input('Digite um nome: ')
+c = input('Digite um nome: ')
+d = input('Digite um nome: ')
+e = input('Digite um nome: ')
+
+agenda = [a,b,c,d,e]
+for indice, nomes in enumerate(agenda, start=1): 
+
+  print(indice, '-' ,nomes)
