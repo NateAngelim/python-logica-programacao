@@ -1,0 +1,12 @@
+jogos = {}
+while True:
+
+  jogo = input('Digite o nome do jogo: . Ou digite 0 para sair.')
+
+  if jogo == '0':
+    break
+
+  genero = input('Digite o gênero do jogo: ')
+  jogos[jogo] = genero  
+
+print(jogos)
