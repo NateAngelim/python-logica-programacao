@@ -1,0 +1,32 @@
+votacao = []
+contador_nulo = 0
+contador_1 = 0
+contador_2 = 0
+contador_3 = 0
+for i in range(10):
+  votos = int(input('Digite o número do seu candidato: '))
+
+  votacao.append(votos)
+
+  if votos not in [1,2,3]:
+    contador_nulo += 1
+    print('Voto nulo.')
+  elif votos == 1:
+    contador_1 += 1  
+  elif votos == 2:
+    contador_2 +=1  
+  elif votos == 3:
+    contador_3 +=1
+
+  
+
+if contador_1 > contador_2 and contador_1 > contador_3:
+    vencedor = "Candidato 1"
+elif contador_2 > contador_1 and contador_2 > contador_3:
+    vencedor = "Candidato 2"
+elif contador_3 > contador_1 and contador_3 > contador_2:
+    vencedor = "Candidato 3"
+else:
+    vencedor = "Empate"
+
+print(f"O vencedor é: {vencedor}")
