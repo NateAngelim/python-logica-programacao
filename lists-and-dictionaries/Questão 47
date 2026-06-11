@@ -1,0 +1,19 @@
+notas_alunos = {
+    'Alexander': 10,
+    'Ciro': 9,
+    'Julius': 8,
+    'Napoleão': 7,
+    'Tamerlão': 7
+}
+
+student = input('Digite o seu nome: ')
+
+if student in notas_alunos:
+    nota = notas_alunos[student]
+
+    print(f'A nota do aluno é {nota}')
+
+    if nota < 6:
+        print('O aluno foi reprovado.')
+    else:
+        print('O aluno foi aprovado.') 
