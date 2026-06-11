@@ -1,0 +1,28 @@
+historico = []
+
+while True:
+    operacao = input('Digite a operação que quer realizar: soma, subtracao, multi, divisao. Ou digite 0 para encerrar: ').lower()
+
+    if operacao == "0":
+        break
+
+    if operacao not in ['soma', 'subtracao', 'multi', 'divisao']:
+        print('Erro, digite uma operação correta.')
+        continue
+
+    num1 = int(input('Digite um número: '))
+    num2 = int(input('Digite outro número: '))
+
+    if operacao == "soma":
+        resultado = num1 + num2
+    elif operacao == "subtracao":
+        resultado = num1 - num2
+    elif operacao == "multi":
+        resultado = num1 * num2
+    elif operacao == "divisao":
+        resultado = num1 / num2
+
+    print(f"Resultado: {resultado}")
+    historico.append(resultado)
+
+print("Histórico:", historico)
