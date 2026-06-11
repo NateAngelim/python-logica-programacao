@@ -1,0 +1,39 @@
+numeros = []
+while True:
+  num = int(input('Digite um número: .Digite 0 para interromper.'))
+  if num == 0:
+    break
+  else:
+    numeros.append(num) 
+print(numeros)  
+
+def soma(numeros):
+  contador = 0
+  for num in numeros:
+    contador += num
+  return contador
+
+def maior_valor(numeros):
+  maior = numeros [0]
+  for num in numeros:
+    if num > maior:
+      maior = num
+  return maior      
+
+def menor_valor(numeros):
+  menor = numeros[0]
+  for num in numeros:
+    if num < menor:
+      menor = num  
+  return menor    
+
+def media(numeros):
+  contador = 0
+  for num in numeros:
+    contador += num
+  return contador /len(numeros)  
+
+print(soma(numeros))    
+print(maior_valor(numeros))
+print(menor_valor(numeros))
+print(media(numeros))
