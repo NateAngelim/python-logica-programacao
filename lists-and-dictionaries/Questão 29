@@ -1,0 +1,14 @@
+tarefas = []
+while True:
+  print('1 - Adicionar tarefa')
+  print('2 - Ver tarefas')
+  print('0 - Sair')
+
+  opcao = input('Escolha: ')
+  if opcao == '0':
+    break
+  elif opcao == '1':
+    atividades = input('Digite a atividade: ')
+    tarefas.append(atividades)
+  elif opcao == '2':
+    print(tarefas)
