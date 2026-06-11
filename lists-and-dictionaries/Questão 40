@@ -1,0 +1,6 @@
+name = input('Digite um nome: ')
+age = int(input('Digite a idade: '))
+city = input('Digite a cidade: ')
+
+cadastro = {'nome': name, 'idade' : age, 'cidade' : city}
+print(cadastro)
