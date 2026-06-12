@@ -1,0 +1,25 @@
+lista_telefone = {"Shaka" : "777-777", 
+                  'Saga' : '666-666', 
+                  'Aioria' : '555-555', 
+                  'Shura' : '444-444' , 
+                  'Aldebaran' : '333-333'}
+
+contato = input('Digite o nome do contato para conseguir o telefone: ')
+numero_contato = '0'
+for nome,numero in lista_telefone.items():
+  if nome == contato:
+    numero_contato = numero
+
+    print(numero_contato)
+
+# segunda solução
+lista_telefone = {"Shaka" : "777-777", 
+                  'Saga' : '666-666', 
+                  'Aioria' : '555-555', 
+                  'Shura' : '444-444' , 
+                  'Aldebaran' : '333-333'}
+
+contato = input('Digite o nome do contato para conseguir o telefone: ')
+
+if contato in lista_telefone:
+    print(lista_telefone[contato])
