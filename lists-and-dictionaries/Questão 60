@@ -1,0 +1,10 @@
+produtos = {
+    "TV SAMSUNG 50": {"preco": 2500.00, "estoque": 30},
+    "NOTEBOOK ASUS": {"preco": 4200.00, "estoque": 25},
+    "TABLET LENOVO": {"preco": 1200.00, "estoque": 0},
+    "IMPRESSORA EPSON": {"preço": 700.00, "estoque": 15}
+}
+
+nome = input("Digite o nome do produto: ").upper()
+if nome in produtos:
+    print(produtos[nome])
