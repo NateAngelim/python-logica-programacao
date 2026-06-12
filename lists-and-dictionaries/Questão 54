@@ -1,0 +1,9 @@
+arquivo_vendas = {"TV Samsung 50, 4k" : 30 , 
+                  "Notebook gamer Asus" : 25, 
+                  "Tablet Lenovo" : 12, 
+                  "Impressora Epson Multifuncional" : 24, 
+                  "JBL Soundbar bluetooth" : 0}
+
+for produto, estoque in arquivo_vendas.items():
+  if estoque == 0:
+    print(f'O produto {produto} esta zerado no estoque.')
