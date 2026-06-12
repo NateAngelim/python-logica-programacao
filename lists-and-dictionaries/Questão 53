@@ -1,0 +1,16 @@
+votacao = {1:0, 2:0, 3:0, 0 : 0}
+
+while True:
+  voto = int(input('Vote no número do seu candidato: 1/2/3 ou digite 0 para anular o voto.'))
+  if voto not in [1,2,3,0]:
+    break
+  elif voto == 1:
+    votacao[1] += 1
+  elif voto == 2:
+    votacao[2] += 1
+  elif voto == 3:
+    votacao[3] += 1
+  else:
+    votacao[0] += 1
+
+print(votacao)
