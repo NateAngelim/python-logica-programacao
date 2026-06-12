@@ -1,0 +1,27 @@
+usuarios = {}
+
+while True:
+    login = input("Login (0 para sair): ")
+
+    if login == "0":
+        break
+
+    senha = input("Senha: ")
+
+    usuarios[login] = senha
+
+#ampliando o exercício
+
+usuarios = {
+    "admin1": "1234",
+    "admin2": "5678"
+}
+
+login = input("Login: ")
+senha = input("Senha: ")
+
+if login in usuarios and usuarios[login] == senha:
+    print("Acesso permitido")
+else:
+    print("Login ou senha incorretos")
+
