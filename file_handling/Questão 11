@@ -1,0 +1,19 @@
+numeros = []
+
+for i in range(5):
+    num = int(input('Digite um número: '))
+    numeros.append(num)
+
+with open('numeros.txt', 'w') as arquivo:
+    for numero in numeros:
+        arquivo.write(str(numero) + '\n')
+
+with open('numeros.txt', 'r') as arquivo:
+    conteudo = arquivo.readlines()
+
+soma = 0
+
+for linha in conteudo:
+    soma += int(linha)
+
+print(soma)
