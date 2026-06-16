@@ -1,0 +1,23 @@
+cadastro = []
+
+while True:
+  nome = input('Digite o nome do funcionário: ')
+
+  if nome == '0':
+    break
+
+  telefone = input('Digite o número de telefone: ')
+
+  cadastro.append((nome, telefone))
+
+with open('cadastro.txt' , 'w') as arquivo:
+  for name,phone_number in cadastro:
+    arquivo.write(f'{name}, {phone_number}\n' )
+
+with open('cadastro.txt', 'r') as arquivo:
+  conteudo = arquivo.readlines()
+
+  nome_procurado = input('Digite o nome que procura no cadastro: ')
+  for linha in conteudo:
+    if nome_procurado in linha:
+      print('Encontrado')  
