@@ -1,0 +1,25 @@
+lista_nomes = []
+lista_idades = []
+
+while True:
+    nome = input('Digite o nome (ou 0 para sair): ')
+
+    if nome == "0":
+        break
+
+    idade = int(input('Digite a idade: '))
+
+    lista_nomes.append(nome)
+    lista_idades.append(idade)
+
+cadastro = list(zip(lista_nomes, lista_idades))
+print(cadastro)
+
+with open('cadastro.txt', 'w') as arquivo:
+    for nome, idade in cadastro:
+        arquivo.write(f'{nome} - {idade}\n')
+
+with open ('cadastro.txt' , 'r') as arquivo:
+  conteudo = arquivo.read()
+
+print(conteudo)
