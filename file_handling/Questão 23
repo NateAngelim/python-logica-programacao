@@ -1,0 +1,28 @@
+alunos = []
+
+while True:
+  nome = input('Digite o nome do aluno: ')
+
+  if nome == '0':
+    break
+
+  nota = float(input('Digite a nota do aluno: '))
+
+  alunos.append((nome,nota))
+
+with open('alunos.csv','w') as arquivo:
+  arquivo.write('nome, nota\n')
+
+  for name, grade in alunos:
+    arquivo.write(f'{name}, {grade}\n')
+
+with open('alunos.csv', 'r') as arquivo:
+  conteudo = arquivo.read()       
+
+notas = []
+
+for nome, nota in alunos:
+    notas.append(nota)
+
+media = sum(notas) / len(notas)
+print(media)
