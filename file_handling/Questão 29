@@ -1,0 +1,28 @@
+despesas = []
+
+while True:
+  descricao = input('Despesas: ')
+
+  if descricao == '0':
+    break
+
+  valor = float(input('Digite o valor gasto: '))  
+
+  despesas.append((descricao,valor))
+
+with open('despesas.csv','w') as arquivo:
+  arquivo.write('descricao,valor\n')
+
+  for description,value in despesas:
+    arquivo.write(f'{description},{value}\n')
+
+with open('despesas.csv','r') as arquivo:
+  next(arquivo)
+
+  soma = 0
+  for linha in arquivo:
+    descricao,valor = linha.strip().split(',')
+    valor = float(valor)
+    soma += valor
+
+  print(f'O total gasto foi R$ {soma}')
