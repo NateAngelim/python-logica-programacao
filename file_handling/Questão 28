@@ -1,0 +1,22 @@
+jogos = []
+
+while True:
+  nome = input('Digite o nome do jogo: ')
+
+  if nome == '0':
+    break
+
+  genero = input('Digite o gênero do jogo: ')
+
+  jogos.append((nome,genero))
+
+with open('jogos.csv','w') as arquivo: 
+  arquivo.write('nome,genero\n')   
+
+  for name,genre in jogos:
+    arquivo.write(f'{name},{genre}\n') 
+
+with open('jogos.csv','r') as arquivo:
+  conteudo = arquivo.read()
+
+print(conteudo)      
