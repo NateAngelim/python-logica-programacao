@@ -1,0 +1,38 @@
+votos = []
+
+contador1 = 0
+contador2 = 0
+contador3 = 0
+contador_nulo = 0
+
+while True:
+
+  print('Os candidatos são 1,2,3, 0 encerra a votação, outro numero é nulo.')
+  voto = int(input('Digite o seu voto'))
+
+  if voto == 0:
+    break
+
+  if voto == 1:
+    contador1 +=1
+  if voto == 2:
+    contador2 +=1 
+  if voto == 3:
+    contador3 +=1 
+  if voto > 3:
+    contador_nulo +=1
+
+  votos.append((voto))
+
+#print(contador1, contador2, contador3, contador_nulo)  
+#print(votos)
+
+with open('votos.csv','w') as arquivo:
+  arquivo.write('voto\n')
+  for voto in votos:
+    arquivo.write(f'{voto}\n')
+
+with open('votos.csv','r') as arquivo:
+  conteudo = arquivo.read()
+
+print(conteudo)      
