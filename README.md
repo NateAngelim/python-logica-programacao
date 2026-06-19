@@ -37,6 +37,13 @@ Repositório criado para registrar minha evolução nos estudos de Python e lóg
 * iteração com for
 * operações com listas
 
+### Tuplas
+
+* criação de tuplas
+* acesso a elementos
+* armazenamento de registros simples
+* uso em projetos práticos
+
 ### Dicionários
 
 * criação de dicionários
@@ -45,7 +52,7 @@ Repositório criado para registrar minha evolução nos estudos de Python e lóg
 * iteração em dicionários
 * aplicações práticas
 
-### Manipulação de Arquivos (Em andamento)
+### Manipulação de Arquivos
 
 * open()
 * modos de abertura (`r`, `w`, `a`)
@@ -54,6 +61,8 @@ Repositório criado para registrar minha evolução nos estudos de Python e lóg
 * readlines()
 * write()
 * leitura e gravação de arquivos texto
+* arquivos CSV
+* persistência de dados
 
 ## Conceitos Praticados
 
@@ -65,30 +74,18 @@ Repositório criado para registrar minha evolução nos estudos de Python e lóg
 * resolução de problemas
 * manipulação de coleções
 * persistência de dados em arquivos
+* busca de informações em arquivos
+* processamento de dados CSV
 
-## Exercícios
+## Projetos Desenvolvidos
 
-Entre os desafios resolvidos estão:
-
-* cálculo de descontos
-* planos de internet
-* validação de datas
-* identificação de signos
-* sistemas de login
-* verificadores de números primos
-* sistemas de votação
-* tabuada
-* contagem regressiva
-* cálculos com laços de repetição
-* cadastro de usuários
-* manipulação de listas
-* exercícios com dicionários
-* leitura e escrita de arquivos texto
-* outros desafios de lógica
+* Calculadora Simples
+* Sistema de Notas com CSV
+* Agenda de Contatos com CSV
 
 ## Objetivo
 
-Desenvolver raciocínio lógico, aprender os fundamentos da programação e construir uma base sólida para evoluir em Python e desenvolvimento de software.
+Desenvolver raciocínio lógico, aprender os fundamentos da programação e construir uma base sólida para evoluir em Python, análise de dados e desenvolvimento de software.
 
 ## Tecnologias
 
@@ -107,16 +104,21 @@ Desenvolver raciocínio lógico, aprender os fundamentos da programação e cons
 * ✅ Estruturas de Repetição
 * ✅ Funções
 * ✅ Listas
+* ✅ Tuplas
 * ✅ Dicionários
-* 🔄 Manipulação de Arquivos TXT/CSV
+* ✅ Manipulação de Arquivos TXT
+* ✅ Manipulação de Arquivos CSV
 
 ### Próximos Tópicos
 
-* CSV
-* Tuplas
-* Programação Orientada a Objetos (POO)
+* Excel
 * Bibliotecas para análise de dados
-* Projetos práticos
+* Programação Orientada a Objetos (POO)
+* Projetos práticos mais completos
+* Automação de tarefas
+* Pandas
+* Visualização de dados
+
 
 
 
