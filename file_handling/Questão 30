@@ -1,0 +1,27 @@
+contatos = []
+
+while True:
+  nome = input('Digite o nome: ')
+
+  if nome == '0':
+    break
+
+  telefone = input('Digite o telefone: ')
+
+  contatos.append((nome,telefone))  
+
+with open('contatos.csv','w') as arquivo:
+  arquivo.write('nome,telefone\n')
+
+  for name,phone in contatos:
+    arquivo.write(f'{name},{phone}\n')  
+
+with open('contatos.csv','r') as arquivo:
+  next(arquivo)
+
+  busca = input('Digite o nome que esta buscando: ')  
+  for linha in arquivo:
+    nome,telefone = linha.strip().split(',')
+    
+    if busca == nome:
+      print(telefone)
